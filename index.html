@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Tip Calculator</title>
+</head>
+<body>
+
+    <section class="container">
+        <div class="card mt-5">
+            <div class="card-header">
+                <h1>Tip Calculator</h1>
+            </div>
+            <div class="card-body">
+                <form action="">
+                    <p class="mb-0">How much was your bill?</p>
+                    <label for="amount-input">$</label>
+                    <input type="text" name="amount-input" placeholder="Bill Amount" class="my-3" id="amount-input">
+                    <p class="mb-0">How was your service?</p>
+                    <select class="form-select my-3" aria-label="Default select example">
+                        <option value="no-option" selected>Choose an Option</option>
+                        <option value="one-percent">Very Shitty</option>
+                        <option value="ten-percent">Pretty Shitty</option>
+                        <option value="fifteen-percent">Not Bad But Not Great</option>
+                        <option value="twenty-percent">Above Average</option>
+                        <option value="thirty-percent">Memorable</option>
+                      </select>
+                      <p>How many people are sharing the bill?</p>
+                      <input type="text" name="number-of-people" placeholder="Number of People" class="mb-3" id="num-of-people">
+                      <label for="number-of-people">People</label>
+                      <button class="btn btn-outline-success d-block mb-2" type="submit">Calculate Tip</button>
+                      <h3 id="tip-per-person">Tip Per Person: </h3>
+                      <h3 id="total-tip">Total Tip: </h3>
+                      <h3 id="total-per-person">Total Per Person(With Tip): </h3>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>
